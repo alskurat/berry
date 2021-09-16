@@ -15,6 +15,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_hideButton_clicked()
 {
+    qDebug() << "hide button clicked";
     QString fileName = QFileDialog::getOpenFileName(this,
           tr("Open File"), "D:\\workspace_edu", tr("Any Files ()"));
 
